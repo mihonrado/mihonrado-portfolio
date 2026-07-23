@@ -1,0 +1,118 @@
+.aboutSection {
+  padding: 6rem 5%;
+  background-color: var(--color-royal-blue);
+  position: relative;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--color-swan-wing);
+  padding: 3rem;
+  position: relative;
+  border: 2px solid var(--color-shellstone);
+  box-shadow: 6px 6px 0px var(--color-sapphire);
+}
+
+.header {
+  position: relative;
+}
+
+.paperClip {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+  width: 15px;
+  height: 50px;
+  border: 3px solid var(--color-shellstone);
+  border-radius: 10px;
+  z-index: 10;
+  background: transparent;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--color-royal-blue);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid var(--color-shellstone);
+  padding-bottom: 0.5rem;
+}
+
+.highlight {
+  color: var(--color-sapphire);
+  border-bottom: 3px solid var(--color-quicksand);
+}
+
+.content {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.polaroid {
+  width: 200px;
+  background-color: var(--color-shellstone);
+  padding: 10px 10px 20px 10px;
+  box-shadow: 4px 4px 0px var(--color-sapphire);
+  transform: rotate(-3deg);
+  position: relative;
+}
+
+.tape {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(2deg);
+  width: 80px;
+  height: 30px;
+  background-color: var(--color-quicksand);
+  opacity: 0.7;
+}
+
+.polaroidInner {
+  background-color: var(--color-royal-blue);
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-swan-wing);
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 0.85rem;
+  border: 2px solid var(--color-sapphire);
+}
+
+.textContent {
+  flex: 1;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.textContent p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--color-sapphire);
+  margin-bottom: 1.5rem;
+}
+
+.textContent strong {
+  color: var(--color-royal-blue);
+  text-decoration: underline;
+  text-decoration-color: var(--color-quicksand);
+}
+
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 4rem 5%;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .polaroid {
+    width: 100%;
+    max-width: 280px;
+  }
+}

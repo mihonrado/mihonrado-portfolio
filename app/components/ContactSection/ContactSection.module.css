@@ -1,0 +1,160 @@
+.contactSection {
+  padding: 6rem 5%;
+  background-color: var(--color-swan-wing);
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--color-royal-blue);
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.highlight {
+  color: var(--color-sapphire);
+  border-bottom: 3px solid var(--color-quicksand);
+}
+
+.content {
+  background-color: var(--color-shellstone);
+  padding: 4rem 2rem;
+  box-shadow: 6px 6px 0 var(--color-sapphire);
+  border: 2px solid var(--color-sapphire);
+  position: relative;
+  overflow: hidden;
+}
+
+.stamp {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--color-sapphire);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 4px solid var(--color-sapphire);
+  padding: 5px 15px;
+  transform: rotate(-15deg);
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.infoBox h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  color: var(--color-royal-blue);
+  margin-bottom: 1.5rem;
+}
+
+.infoBox p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-sapphire);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.emailWrapper {
+  margin-bottom: 3rem;
+}
+
+.emailLink {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-royal-blue);
+  padding: 1rem 2.5rem;
+  border: 2px solid var(--color-royal-blue);
+  transition: all 0.3s ease;
+  background-color: var(--color-quicksand);
+}
+
+.emailLink:hover {
+  background-color: var(--color-royal-blue);
+  color: var(--color-swan-wing);
+  transform: scale(1.05);
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--color-royal-blue);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  font-family: "Courier New", Courier, monospace;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-royal-blue);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.socialLink:hover {
+  background-color: var(--color-royal-blue);
+  color: var(--color-swan-wing);
+}
+
+@media (max-width: 768px) {
+  .contactSection {
+    padding: 4rem 5%;
+  }
+
+  .content {
+    padding: 2.5rem 1.25rem;
+  }
+
+  .infoBox h3 {
+    font-size: 1.5rem;
+  }
+
+  .infoBox p {
+    font-size: 0.95rem;
+  }
+
+  .emailLink {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem;
+    word-break: break-all;
+    max-width: 100%;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .socialLink {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+    font-size: 0.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+}

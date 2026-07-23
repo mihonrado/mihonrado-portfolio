@@ -1,0 +1,13 @@
+.footer {
+  text-align: center;
+  padding: 2rem 5%;
+  background-color: var(--color-royal-blue);
+  color: var(--color-swan-wing);
+  border-top: 3px solid var(--color-quicksand);
+}
+
+.footer p {
+  font-size: 0.875rem;
+  color: var(--color-shellstone);
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,0 +1,237 @@
+.journeySection {
+  padding: 6rem 5%;
+  background-color: var(--color-swan-wing);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 5rem;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  background-color: var(--color-royal-blue);
+  padding: 1rem 3rem;
+  border: 2px solid var(--color-quicksand);
+}
+
+.tape {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%) rotate(3deg);
+  width: 100px;
+  height: 28px;
+  background-color: var(--color-quicksand);
+  opacity: 0.75;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  color: var(--color-swan-wing);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.highlight {
+  color: var(--color-quicksand);
+}
+
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.zigzagSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.timelineItem {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.timelineItem.left {
+  flex-direction: row-reverse;
+}
+
+.timelineItem.left .stickyNote {
+   margin-right: calc(50% + 30px);
+}
+
+.timelineItem.right .stickyNote {
+   margin-left: calc(50% + 30px);
+}
+
+.stickyNote {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background-color: var(--color-quicksand);
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 5px 5px 0 var(--color-sapphire);
+  transform: rotate(-1deg);
+  transition: transform 0.3s ease;
+  border: 1px solid var(--color-shellstone);
+}
+
+.timelineItem.right .stickyNote {
+  transform: rotate(1.5deg);
+  box-shadow: 5px 5px 0 var(--color-royal-blue);
+}
+
+.stickyNote:hover {
+  transform: scale(1.02) rotate(0deg);
+  z-index: 10;
+}
+
+.pin {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-sapphire);
+  border-radius: 50%;
+  border: 3px solid var(--color-royal-blue);
+}
+
+.pin::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-shellstone);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.year {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--color-royal-blue);
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-size: 1.75rem;
+  color: var(--color-royal-blue);
+  margin-bottom: 0.25rem;
+}
+
+.company {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.1rem;
+  color: var(--color-sapphire);
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--color-shellstone);
+  color: var(--color-royal-blue);
+  padding: 4px 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-sapphire);
+}
+
+.divider {
+  border: 0;
+  border-top: 1px dashed var(--color-sapphire);
+  margin: 1.5rem 0;
+  opacity: 0.4;
+}
+
+.description {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--color-royal-blue);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.subRoleSection {
+  margin-top: 1.5rem;
+}
+
+.subRoleTitle {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--color-sapphire);
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.bulletList {
+  list-style: none;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--color-royal-blue);
+  font-size: 0.95rem;
+}
+
+.bulletList li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.bulletList li::before {
+  content: "▷";
+  position: absolute;
+  left: 0;
+  color: var(--color-sapphire);
+  font-size: 0.85rem;
+}
+
+.decoSquare {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-royal-blue);
+}
+
+@media (max-width: 768px) {
+  .timelineItem {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .timelineItem.left .stickyNote,
+  .timelineItem.right .stickyNote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .stickyNote {
+    max-width: 100%;
+  }
+}
