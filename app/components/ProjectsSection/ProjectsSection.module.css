@@ -39,7 +39,7 @@
 
 .folder {
   position: relative;
-  width: 100%;
+  width: calc(100% - 35px);
   height: 420px;
   cursor: pointer;
   perspective: 1200px;
